@@ -75,7 +75,7 @@ func connectToDB() *sql.DB {
 			log.Println("Failed to connect to database. Exiting...")
 			os.Exit(1)
 		}
-		log.Println("Failed to connect to database. Retrying...")
+		log.Println("Retrying...")
 		time.Sleep(time.Second * 2)
 		continue
 	}
